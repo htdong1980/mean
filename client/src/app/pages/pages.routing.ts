@@ -7,8 +7,16 @@ import { ModuleWithProviders } from '@angular/core';
 
 export const routes: Routes = [
   {
+    path: '',
+    loadChildren: 'app/pages/landingpage/landingpage.module#LandingPageModule'
+  },
+  {
     path: 'login',
     loadChildren: 'app/pages/login/login.module#LoginModule'
+  },
+  {
+    path: 'reset',
+    loadChildren: 'app/pages/reset/reset.module#ResetModule'
   },
   {
     path: 'register',

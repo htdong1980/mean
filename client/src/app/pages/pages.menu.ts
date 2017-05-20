@@ -277,10 +277,26 @@ export const PAGES_MENU = [
         },
         children: [
           {
+            path: ['/'],
+            data: {
+              menu: {
+                title: 'general.menu.landingpage'
+              }
+            }
+          },
+          {
             path: ['/login'],
             data: {
               menu: {
                 title: 'general.menu.login'
+              }
+            }
+          },
+          {
+            path: ['/reset'],
+            data: {
+              menu: {
+                title: 'general.menu.reset'
               }
             }
           },

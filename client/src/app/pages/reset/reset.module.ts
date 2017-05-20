@@ -1,24 +1,24 @@
-import { NgModule }      from '@angular/core';
-import { CommonModule }  from '@angular/common';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { AppTranslationModule } from '../../app.translation.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgaModule } from '../../theme/nga.module';
 
-import { Register } from './register.component';
-import { routing }       from './register.routing';
+import { ResetComponent } from './reset.component';
+import { routing } from './reset.routing';
 
 
 @NgModule({
   imports: [
     CommonModule,
-    AppTranslationModule,    
+    AppTranslationModule,
     ReactiveFormsModule,
     FormsModule,
     NgaModule,
     routing
   ],
   declarations: [
-    Register
+    ResetComponent
   ]
 })
-export class RegisterModule {}
+export class ResetModule {}

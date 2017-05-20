@@ -1,11 +1,9 @@
-
 <div class="auth-main">
   <div class="auth-block">
-    <a routerLink="/pages" class="auth-title"> <h1 translate>{{'login.title'}}</h1> </a>
-    <a routerLink="/register" class="auth-link" translate>{{'login.signup_link'}}</a>
+    <a routerLink="/" class="auth-title"> <h1 translate>{{'login.reset'}}</h1> </a>
+    <a routerLink="/login" class="auth-link" translate>{{'login.have_password'}}</a>
 
     <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" class="form-horizontal">
-      <!--
       <div class="form-group row" [ngClass]="{'has-error': (!email.valid && email.touched), 'has-success': (email.valid && email.touched)}">
         <label for="inputEmail3" class="col-sm-2 control-label" translate>{{'login.email'}}</label>
 
@@ -13,7 +11,7 @@
           <input [formControl]="email" type="email" class="form-control" id="inputEmail3" placeholder="{{'login.email' | translate}}">
         </div>
       </div>
-    -->
+      <!--
       <div class="form-group row" [ngClass]="{'has-error': (!username.valid && username.touched), 'has-success': (username.valid && username.touched)}">
         <label for="inputUsername3" class="col-sm-2 control-label" translate>{{'login.username'}}</label>
 
@@ -28,10 +26,11 @@
           <input [formControl]="password" type="password" class="form-control" id="inputPassword3" placeholder="{{'login.password' | translate}}">
         </div>
       </div>
+    -->
       <div class="form-group row">
         <div class="offset-sm-2 col-sm-10">
-          <button [disabled]="!form.valid" type="submit" class="btn btn-default btn-auth" translate>{{'login.sign_in'}}</button>
-          <a routerLink="/reset" class="forgot-pass" translate>{{'login.forgot_password'}}</a>
+          <button [disabled]="!form.valid" type="submit" class="btn btn-default btn-auth" translate>{{'login.reset'}}</button>
+          <!--<a routerLink="/login" class="forgot-pass" translate>{{'login.sign_in'}}</a>-->
         </div>
       </div>
     </form>

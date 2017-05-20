@@ -1,3 +1,4 @@
+export * from './baAlert';
 export * from './baPageTop';
 export * from './baMsgCenter';
 export * from './baSidebar';
