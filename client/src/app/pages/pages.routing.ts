@@ -28,7 +28,7 @@ export const routes: Routes = [
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'blank', loadChildren: './blank/blank.module#BlankModule' },
-      { path: 'box', loadChildren: './box/box.module#BoxModule' },
+      { path: 'adminLTE', loadChildren: './adminLTE/adminLTE.module#AdminLTEModule' },
       { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
       { path: 'editors', loadChildren: './editors/editors.module#EditorsModule' },
       { path: 'components', loadChildren: './components/components.module#ComponentsModule' },

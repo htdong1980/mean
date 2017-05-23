@@ -28,10 +28,10 @@ export const PAGES_MENU = [
         }
       },
       {
-        path: 'box',  // path for our page
+        path: 'adminLTE',  // path for our page
         data: { // custom menu declaration
           menu: {
-            title: 'Box Page', // menu title
+            title: 'AdminLTE Page', // menu title
             icon: 'ion-document', // menu icon
             pathMatch: 'prefix', // use it if item children not displayed in menu
             selected: false,

@@ -1,4 +1,4 @@
-Change box page to be AdminLTE page
+[DONE] Change box page to be AdminLTE page
 Separate AdminLTE styles into smaller component in box page
 - Box similar to Blank page
 - Info box type 1

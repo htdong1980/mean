@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'box-child',
-  templateUrl: './boxChild.html',
-  styleUrls: ['./boxChild.scss'],
+  selector: 'adminLTE-child',
+  templateUrl: './adminLTEChild.html',
+  styleUrls: ['./adminLTEChild.scss'],
 })
-export class BoxChild implements OnInit {
+export class AdminLTEChild implements OnInit {
   public firstCardContent: string;
   public secondCardContent: string;
   public thirdCardContent: string;

@@ -1,4 +1,7 @@
 {
+  "adminLTE":{
+    "more_info": "More info"
+  },
   "login": {
     "title": "GK|SBS",
     "signup_link": "Sign up!",
