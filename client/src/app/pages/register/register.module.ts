@@ -1,24 +1,27 @@
-import { NgModule }      from '@angular/core';
-import { CommonModule }  from '@angular/common';
+// import { UserService } from '../_services/index';
+import { routing } from './register.routing';
+import { Register } from './register.component';
+
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { AppTranslationModule } from '../../app.translation.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgaModule } from '../../theme/nga.module';
 
-import { Register } from './register.component';
-import { routing }       from './register.routing';
-
-
 @NgModule({
   imports: [
     CommonModule,
-    AppTranslationModule,    
+    AppTranslationModule,
     ReactiveFormsModule,
     FormsModule,
     NgaModule,
-    routing
+    routing,
   ],
   declarations: [
-    Register
-  ]
+    Register,
+  ],
+  providers: [
+      // UserService,
+  ],
 })
 export class RegisterModule {}

@@ -15,6 +15,19 @@ export const PAGES_MENU = [
         }
       },
       {
+        path: 'main',  // path for our page
+        data: { // custom menu declaration
+          menu: {
+            title: 'Main Page', // menu title
+            icon: 'ion-document', // menu icon
+            pathMatch: 'prefix', // use it if item children not displayed in menu
+            selected: false,
+            expanded: false,
+            order: 5,
+          }
+        }
+      },
+      {
         path: 'blank',  // path for our page
         data: { // custom menu declaration
           menu: {
@@ -245,6 +258,36 @@ export const PAGES_MENU = [
         ]
       },
       {
+        path: 'page_error',
+        data: {
+          menu: {
+            title: 'general.menu.page_error',
+            icon: 'ion-grid',
+            selected: false,
+            expanded: false,
+            order: 500,
+          }
+        },
+        children: [
+          {
+            path: 'page404',
+            data: {
+              menu: {
+                title: 'general.menu.page404',
+              }
+            }
+          },
+          {
+            path: 'page500',
+            data: {
+              menu: {
+                title: 'general.menu.page500',
+              }
+            }
+          },
+        ]
+      },
+      {
         path: 'maps',
         data: {
           menu: {
@@ -330,7 +373,23 @@ export const PAGES_MENU = [
             path: ['/register'],
             data: {
               menu: {
-                title: 'general.menu.register'
+                title: 'general.menu.register',
+              }
+            }
+          },
+          {
+            path: ['/page404'],
+            data: {
+              menu: {
+                title: 'general.menu.page404',
+              }
+            }
+          },
+          {
+            path: ['/page500'],
+            data: {
+              menu: {
+                title: 'general.menu.page500',
               }
             }
           }

@@ -5,6 +5,8 @@
   "login": {
     "title": "GK|SBS",
     "signup_link": "Sign up!",
+    "firstname": "Firstname",
+    "lastname": "Lastname",
     "username": "Username",
     "email": "Email",
     "password": "Password",
@@ -58,6 +60,9 @@
       "login": "Login",
       "reset": "Reset",
       "register": "Register",
+      "page_error": "Page Error",
+      "page404": "Page 404",
+      "page500": "Page 500",
       "menu_level_1": "Menu Level 1",
       "menu_level_1_1": "Menu Level 1.1",
       "menu_level_1_2": "Menu Level 1.2",

@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
-import { Http, Headers, Response } from '@angular/http';
+import { AppConfig } from '../../app.config';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
-import { AppConfig } from '../../app.config';
+import { Injectable } from '@angular/core';
+import { Http, Headers, Response } from '@angular/http';
 
 @Injectable()
 export class AuthenticationService {
