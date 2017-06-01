@@ -2,6 +2,526 @@ export const PAGES_MENU = [
   {
     path: 'pages',
     children: [
+      // GENERAL
+      {
+        path: 'general',
+        data: {
+          menu: {
+            title: 'sidebar.general',
+            icon: 'ion-android-home',
+            selected: false,
+            expanded: false,
+            order: 250,
+          },
+        },
+        children: [
+          {
+            path: 'news80',
+            data: {
+              menu: {
+                title: 'tcode.news80',
+              }
+            }
+          },
+          {
+            path: 'sop80',
+            data: {
+              menu: {
+                title: 'tcode.sop80',
+              }
+            }
+          },
+          {
+            path: 'cnt80',
+            data: {
+              menu: {
+                title: 'tcode.cnt80',
+              }
+            }
+          },
+        ]
+      },
+
+      // My INBOX
+      {
+        path: 'myapproval',
+        data: {
+          menu: {
+            title: 'sidebar.category.myapproval.title',
+            icon: 'ion-android-checkbox-outline',
+            selected: false,
+            expanded: false,
+            order: 250,
+          }
+        },
+        children: [
+          {
+            path: 'inbox',
+            data: {
+              menu: {
+                title: 'sidebar.category.myapproval.inbox',
+                icon: 'ion-ios-filing',
+              }
+            }
+          },
+          {
+            path: 'outbox',
+            data: {
+              menu: {
+                title: 'sidebar.category.myapproval.outbox',
+                icon: 'ion-ios-filing-outline',
+              }
+            }
+          },
+        ]
+      },
+
+      // My OUTBOX
+      {
+        path: 'myrequests',
+        data: {
+          menu: {
+            title: 'sidebar.category.myrequests.title',
+            icon: 'ion-clipboard',
+            selected: false,
+            expanded: false,
+            order: 250,
+          }
+        },
+        children: [
+          {
+            path: 'draft',
+            data: {
+              menu: {
+                title: 'sidebar.category.myrequests.draft',
+                icon: 'ion-ios-compose-outline',
+              }
+            }
+          },
+          {
+            path: 'inprogress',
+            data: {
+              menu: {
+                title: 'sidebar.category.myrequests.inprogress',
+                icon: 'ion-load-a',
+              }
+            }
+          },
+          {
+            path: 'documenting',
+            data: {
+              menu: {
+                title: 'sidebar.category.myrequests.documenting',
+                icon: 'ion-ios-albums-outline',
+              }
+            }
+          },
+          {
+            path: 'finished',
+            data: {
+              menu: {
+                title: 'sidebar.category.myrequests.finished',
+                icon: 'ion-android-done-all',
+              }
+            }
+          },
+        ]
+      },
+
+      // WORKFLOW
+      {
+        path: 'workflow',
+        data: {
+          menu: {
+            title: 'sidebar.workflow',
+            icon: 'ion-shuffle',
+            selected: false,
+            expanded: false,
+            order: 250,
+          }
+        },
+        children: [
+          {
+            path: 'vdr20',
+            data: {
+              menu: {
+                title: 'tcode.vdr20',
+              }
+            }
+          }
+        ]
+      },
+
+      // TRANSACTION
+      {
+        path: 'transaction',
+        data: {
+          menu: {
+            title: 'sidebar.transaction',
+            icon: 'ion-document',
+            selected: false,
+            expanded: false,
+            order: 250,
+          }
+        },
+        children: [
+          {
+            // MJE
+            path: '',
+            data: {
+              menu: {
+                title: 'tcode.mje',
+                selected: false,
+                expanded: false,
+                order: 250,
+              }
+            },
+            children: [
+              {
+                path: 'mje00',
+                data: {
+                  menu: {
+                    title: 'tcode.mje00',
+                  }
+                }
+              },
+              {
+                path: 'mje01',
+                data: {
+                  menu: {
+                    title: 'tcode.mje01',
+                  }
+                }
+              },
+              {
+                path: 'mje02',
+                data: {
+                  menu: {
+                    title: 'tcode.mje02',
+                  }
+                }
+              },
+              {
+                path: 'mje11',
+                data: {
+                  menu: {
+                    title: 'tcode.mje11',
+                  }
+                }
+              },
+              {
+                path: 'mje12',
+                data: {
+                  menu: {
+                    title: 'tcode.mje12',
+                  }
+                }
+              },
+            ]
+          },
+        ]
+      },
+
+      // MASTER DATA
+      {
+        path: 'masterdata',
+        data: {
+          menu: {
+            title: 'sidebar.masterdata',
+            icon: 'ion-social-buffer-outline',
+            selected: false,
+            expanded: false,
+            order: 250,
+          }
+        },
+        children: [
+          // VENDOR
+          {
+            path: '',
+            data: {
+              menu: {
+                title: 'tcode.vdr',
+                selected: false,
+                expanded: false,
+                order: 250,
+              }
+            },
+            children: [
+              {
+                path: 'vdr00',
+                data: {
+                  menu: {
+                    title: 'tcode.vdr00',
+                  }
+                }
+              },
+              {
+                path: 'vdr01',
+                data: {
+                  menu: {
+                    title: 'tcode.vdr01',
+                  }
+                }
+              },
+              {
+                path: 'vdr02',
+                data: {
+                  menu: {
+                    title: 'tcode.vdr02',
+                  }
+                }
+              },
+              {
+                path: 'vdr03',
+                data: {
+                  menu: {
+                    title: 'tcode.vdr03',
+                  }
+                }
+              },
+              {
+                path: 'vdr04',
+                data: {
+                  menu: {
+                    title: 'tcode.vdr04',
+                  }
+                }
+              },
+              {
+                path: 'vdr05',
+                data: {
+                  menu: {
+                    title: 'tcode.vdr05',
+                  }
+                }
+              },
+              {
+                path: 'vdr06',
+                data: {
+                  menu: {
+                    title: 'tcode.vdr06',
+                  }
+                }
+              },
+              {
+                path: 'vdr11',
+                data: {
+                  menu: {
+                    title: 'tcode.vdr11',
+                  }
+                }
+              },
+              {
+                path: 'vdr12',
+                data: {
+                  menu: {
+                    title: 'tcode.vdr12',
+                  }
+                }
+              },
+              {
+                path: 'vdr13',
+                data: {
+                  menu: {
+                    title: 'tcode.vdr13',
+                  }
+                }
+              },
+              {
+                path: 'vdr14',
+                data: {
+                  menu: {
+                    title: 'tcode.vdr14',
+                  }
+                }
+              },
+              {
+                path: 'vdr15',
+                data: {
+                  menu: {
+                    title: 'tcode.vdr15',
+                  }
+                }
+              },
+              {
+                path: 'vdr16',
+                data: {
+                  menu: {
+                    title: 'tcode.vdr16',
+                  }
+                }
+              },
+            ]
+          },
+
+          // CUSTOMER
+          {
+            path: '',
+            data: {
+              menu: {
+                title: 'tcode.ctm',
+                selected: false,
+                expanded: false,
+                order: 250,
+              }
+            },
+            children: [
+              {
+                path: 'ctm00',
+                data: {
+                  menu: {
+                    title: 'tcode.ctm00',
+                  }
+                }
+              },
+              {
+                path: 'ctm01',
+                data: {
+                  menu: {
+                    title: 'tcode.ctm01',
+                  }
+                }
+              },
+              {
+                path: 'ctm02',
+                data: {
+                  menu: {
+                    title: 'tcode.ctm02',
+                  }
+                }
+              },
+              {
+                path: 'ctm03',
+                data: {
+                  menu: {
+                    title: 'tcode.ctm03',
+                  }
+                }
+              },
+              {
+                path: 'ctm04',
+                data: {
+                  menu: {
+                    title: 'tcode.ctm04',
+                  }
+                }
+              },
+              {
+                path: 'ctm05',
+                data: {
+                  menu: {
+                    title: 'tcode.ctm05',
+                  }
+                }
+              },
+              {
+                path: 'ctm06',
+                data: {
+                  menu: {
+                    title: 'tcode.ctm06',
+                  }
+                }
+              },
+              {
+                path: 'ctm11',
+                data: {
+                  menu: {
+                    title: 'tcode.ctm11',
+                  }
+                }
+              },
+              {
+                path: 'ctm12',
+                data: {
+                  menu: {
+                    title: 'tcode.ctm12',
+                  }
+                }
+              },
+              {
+                path: 'ctm13',
+                data: {
+                  menu: {
+                    title: 'tcode.ctm13',
+                  }
+                }
+              },
+              {
+                path: 'ctm14',
+                data: {
+                  menu: {
+                    title: 'tcode.ctm14',
+                  }
+                }
+              },
+              {
+                path: 'ctm15',
+                data: {
+                  menu: {
+                    title: 'tcode.ctm15',
+                  }
+                }
+              },
+              {
+                path: 'ctm16',
+                data: {
+                  menu: {
+                    title: 'tcode.ctm16',
+                  }
+                }
+              },
+            ]
+          },
+
+        ]
+      },
+
+      // CONFIGURATION
+      {
+        path: 'config',
+        data: {
+          menu: {
+            title: 'sidebar.config',
+            icon: 'ion-settings',
+            selected: false,
+            expanded: false,
+            order: 250,
+          }
+        },
+        children: [
+          {
+            // VENDOR
+            path: '',
+            data: {
+              menu: {
+                title: 'tcode.vdr',
+                selected: false,
+                expanded: false,
+                order: 250,
+              }
+            },
+            children: [
+              {
+                path: 'vdr90',
+                data: {
+                  menu: {
+                    title: 'tcode.vdr90',
+                  }
+                }
+              },
+              {
+                path: 'vdr91',
+                data: {
+                  menu: {
+                    title: 'tcode.vdr91',
+                  }
+                }
+              },
+            ]
+          },
+        ]
+      },
+
       {
         path: 'dashboard',
         data: {

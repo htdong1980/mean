@@ -1,0 +1,1 @@
+export * from './sop.component';

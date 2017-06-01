@@ -1,3 +1,5 @@
+// NOTES: NOT LEAVE THE comma at the end element of object of en.json
+
 [DONE] Change box page to be AdminLTE page
 [DONE] Register, Login, Page404, Page500
 

@@ -21,6 +21,75 @@
     "share_on_twitter": "Share on Twitter",
     "share_on_google_plus": "Share on Google Plus"
   },
+  "sidebar": {
+    "general": "GENERAL",
+    "category": {
+      "title": "CATEGORY",
+      "myapproval": {
+        "title": "My APPROVAL",
+        "inbox": "Inbox",
+        "outbox": "Outbox"
+      },
+      "myrequests": {
+        "title": "My REQUESTS",
+        "draft": "Draft",
+        "inprogress": "In progress",
+        "documenting": "Documenting",
+        "finished": "Finished"
+      }
+    },
+    "workflow": "WORKFLOW",
+    "transaction": "TRANSACTION",
+    "masterdata": "MASTER DATA",
+    "config": "CONFIGURATION"
+  },
+  "tcode": {
+    "news80": "Bulletin Board",
+    "sop80": "GeoDe+ (SOP)",
+    "cnt80": "Contact List",
+
+    "vdr": "VENDOR",
+    "vdr00": "Management",
+    "vdr01": "Create (Individual)",
+    "vdr02": "View (Individual)",
+    "vdr03": "Edit (Individual)",
+    "vdr04": "Disable (Individual)",
+    "vdr05": "Enable (Individual)",
+    "vdr06": "History (Individual)",
+    "vdr10": "Summary (Collective)",
+    "vdr11": "Upload (Collective)",
+    "vdr12": "Extract (Collective)",
+    "vdr13": "Upsert (Collective)",
+    "vdr14": "Disable (Collective)",
+    "vdr15": "Enable (Collective)",
+    "vdr16": "History (Collective)",
+    "vdr20": "Vendor Request",
+    "vdr90": "Properties",
+    "vdr91": "Approval Matrix",
+
+    "mje": "MJE",
+    "mje00": "MJE Management",
+    "mje01": "MJE Create",
+    "mje02": "MJE View",
+    "mje11": "MJEs Upload",
+    "mje12": "MJEs Extract",
+
+    "ctm": "CUSTOMER",
+    "ctm00": "Customer Management",
+    "ctm01": "Create Customer",
+    "ctm02": "View Customer",
+    "ctm03": "Edit Customer",
+    "ctm04": "Disable Customer",
+    "ctm05": "Enable Customer",
+    "ctm06": "Customer History",
+    "ctm10": "Customer Request",
+    "ctm11": "Upload Customers",
+    "ctm12": "Extract Customers",
+    "ctm13": "Update Customers",
+    "ctm14": "Disable Customers",
+    "ctm15": "Enable Customers",
+    "ctm16": "Customers History"
+  },
   "general": {
     "gk": "GK",
     "sbs": "SBS",

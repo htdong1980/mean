@@ -39,6 +39,12 @@ export const routes: Routes = [
     canActivateChild: [AuthGuard], // Add by HTD
     children: [
       { path: '', redirectTo: 'main', pathMatch: 'full' },
+      { path: 'general', loadChildren: './sbGeneral/sbGeneral.module#SbGeneralModule' },
+      { path: 'myapproval', loadChildren: './sbMyApproval/sbMyApproval.module#SbMyApprovalModule' },
+      { path: 'myrequests', loadChildren: './sbMyRequest/sbMyRequest.module#SbMyRequestModule' },
+      { path: 'workflow', loadChildren: './sbWorkflow/sbWorkflow.module#SbWorkflowModule' },
+      { path: 'transaction', loadChildren: './sbTransaction/sbTransaction.module#SbTransactionModule' },
+      
       { path: 'main', loadChildren: './main/main.module#MainModule' },
       { path: 'blank', loadChildren: './blank/blank.module#BlankModule' },
       { path: 'adminLTE', loadChildren: './adminLTE/adminLTE.module#AdminLTEModule' },
@@ -51,8 +57,8 @@ export const routes: Routes = [
       { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },
       { path: 'maps', loadChildren: './maps/maps.module#MapsModule' },
       { path: 'page_error', loadChildren: './pageError/pageError.module#PageErrorModule' },
-    ],
-  },
-];
+    ]
+  }
+]
 
 export const routing: ModuleWithProviders = RouterModule.forChild(routes);
