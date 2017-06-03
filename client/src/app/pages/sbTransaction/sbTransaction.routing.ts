@@ -1,25 +1,20 @@
-import { Mje00Component } from '../_modules/mje/components/mje00/mje00.component';
-import { Mje01Component } from '../_modules/mje/components/mje01/mje01.component';
-import { Mje02Component } from '../_modules/mje/components/mje02/mje02.component';
-import { Mje11Component } from '../_modules/mje/components/mje11/mje11.component';
-import { Mje12Component } from '../_modules/mje/components/mje12/mje12.component';
-// import { Page404Component } from '../error/components/page404/page404.component';
-import { SbTransactionComponent } from './sbTransaction.component';
-import { IndexComponent } from './components/index/index.component';
+import { SbTransaction } from './sbTransaction.component';
+import { Mje00, Mje01, Mje02, Mje10, Mje11, Mje12 } from '../../shared';
 
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    component: SbTransactionComponent,
+    component: SbTransaction,
     children: [
-      { path: '', component: IndexComponent },
-      { path: 'mje00', component: Mje00Component },
-      { path: 'mje01', component: Mje01Component },
-      { path: 'mje02', component: Mje02Component },
-      { path: 'mje11', component: Mje11Component },
-      { path: 'mje12', component: Mje12Component },
+      // { path: '', component: IndexComponent },
+      { path: 'mje00', component: Mje00 },
+      { path: 'mje01', component: Mje01 },
+      { path: 'mje02', component: Mje02 },
+      { path: 'mje10', component: Mje10 },
+      { path: 'mje11', component: Mje11 },
+      { path: 'mje12', component: Mje12 },
       // { path: '**', component: Page404Component },
     ],
   },

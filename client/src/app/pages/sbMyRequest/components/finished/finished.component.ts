@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./finished.scss']
 })
 
-export class FinishedComponent {
+export class Finished {
   constructor() {
   }
 }

@@ -21,6 +21,9 @@
     "share_on_twitter": "Share on Twitter",
     "share_on_google_plus": "Share on Google Plus"
   },
+  "shared":{
+    "about": "About"
+  },
   "sidebar": {
     "general": "GENERAL",
     "category": {
@@ -68,9 +71,9 @@
     "vdr91": "Approval Matrix",
 
     "mje": "MJE",
-    "mje00": "MJE Management",
     "mje01": "MJE Create",
     "mje02": "MJE View",
+    "mje10": "Manual Journal Entry",
     "mje11": "MJEs Upload",
     "mje12": "MJEs Extract",
 
@@ -88,7 +91,11 @@
     "ctm13": "Update Customers",
     "ctm14": "Disable Customers",
     "ctm15": "Enable Customers",
-    "ctm16": "Customers History"
+    "ctm16": "Customers History",
+    "ctm20": "Customer Request",
+    "ctm90": "Properties",
+    "ctm91": "Approval Matrix"
+
   },
   "general": {
     "gk": "GK",

@@ -1,6 +1,5 @@
 import { SbMasterDataComponent } from './sbMasterData.component';
 import { IndexComponent } from './components/index/index.component';
-import { Page404Component } from '../error/components/page404/page404.component';
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -19,7 +18,6 @@ import { routing } from './sbMasterData.routing';
   declarations: [
     SbMasterDataComponent,
     IndexComponent,
-    Page404Component,
   ],
 })
 export class SbMasterDataModule {

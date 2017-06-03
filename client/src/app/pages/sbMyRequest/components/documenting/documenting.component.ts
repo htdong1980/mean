@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./documenting.scss'],
 })
 
-export class DocumentingComponent {
+export class Documenting {
   constructor() {
   }
 }

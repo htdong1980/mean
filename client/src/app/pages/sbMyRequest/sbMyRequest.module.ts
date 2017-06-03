@@ -1,16 +1,10 @@
-import { SbMyRequestComponent } from './sbMyRequest.component';
-import { IndexComponent } from './components/index/index.component';
-import { DraftComponent } from './components/draft/draft.component';
-import { InProgressComponent } from './components/inProgress/inProgress.component';
-import { DocumentingComponent } from './components/documenting/documenting.component';
-import { FinishedComponent } from './components/finished/finished.component';
-// import { Page404Component } from '../error/components/page404/page404.component';
+import { SbMyRequest } from './sbMyRequest.component';
+import { Draft, InProgress, Documenting, Finished } from './components';
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgaModule } from '../../theme/nga.module';
-
 import { routing } from './sbMyRequest.routing';
 
 @NgModule({
@@ -21,13 +15,11 @@ import { routing } from './sbMyRequest.routing';
     routing,
   ],
   declarations: [
-    SbMyRequestComponent,
-    IndexComponent,
-    DraftComponent,
-    InProgressComponent,
-    DocumentingComponent,
-    FinishedComponent,
-    // Page404Component,
+    SbMyRequest,
+    Draft,
+    InProgress,
+    Documenting,
+    Finished,
   ],
 })
 export class SbMyRequestModule {

@@ -1,7 +1,7 @@
 import { AuthGuard } from './_guards/index'; // Add by HTD
 
 import { Routes, RouterModule } from '@angular/router';
-import { Page404Component } from './page404/page404.component';
+import { Page404 } from './error/page404';
 import { Pages } from './pages.component';
 import { ModuleWithProviders } from '@angular/core';
 // noinspection TypeScriptValidateTypes
@@ -44,7 +44,7 @@ export const routes: Routes = [
       { path: 'myrequests', loadChildren: './sbMyRequest/sbMyRequest.module#SbMyRequestModule' },
       { path: 'workflow', loadChildren: './sbWorkflow/sbWorkflow.module#SbWorkflowModule' },
       { path: 'transaction', loadChildren: './sbTransaction/sbTransaction.module#SbTransactionModule' },
-      
+
       { path: 'main', loadChildren: './main/main.module#MainModule' },
       { path: 'blank', loadChildren: './blank/blank.module#BlankModule' },
       { path: 'adminLTE', loadChildren: './adminLTE/adminLTE.module#AdminLTEModule' },
@@ -57,8 +57,9 @@ export const routes: Routes = [
       { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },
       { path: 'maps', loadChildren: './maps/maps.module#MapsModule' },
       { path: 'page_error', loadChildren: './pageError/pageError.module#PageErrorModule' },
-    ]
-  }
-]
+      { path: '**', component: Page404 },
+    ],
+  },
+];
 
 export const routing: ModuleWithProviders = RouterModule.forChild(routes);

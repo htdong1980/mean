@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'sbGeneral',
+  selector: 'sb-general',
   template: `<router-outlet></router-outlet>`,
 })
-export class SbGeneralComponent {
+export class SbGeneral {
   constructor() {
   }
 }

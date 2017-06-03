@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./inProgress.scss']
 })
 
-export class InProgressComponent {
+export class InProgress {
   constructor() {
   }
 }

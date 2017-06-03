@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'draft',
@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./draft.scss'],
 })
 
-export class DraftComponent {
-  constructor() {
-  }
+export class Draft {
+  
 }

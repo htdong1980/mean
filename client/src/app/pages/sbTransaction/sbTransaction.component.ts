@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'nga-sb-transaction',
+  selector: 'sb-transaction',
   template: `<router-outlet></router-outlet>`,
 })
-export class SbTransactionComponent {
+export class SbTransaction {
   constructor() {
   }
 }

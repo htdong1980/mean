@@ -166,6 +166,14 @@ export const PAGES_MENU = [
         },
         children: [
           {
+            path: 'mje10',
+            data: {
+              menu: {
+                title: 'tcode.mje10',
+              }
+            }
+          },
+          {
             // MJE
             path: '',
             data: {
@@ -176,15 +184,7 @@ export const PAGES_MENU = [
                 order: 250,
               }
             },
-            children: [
-              {
-                path: 'mje00',
-                data: {
-                  menu: {
-                    title: 'tcode.mje00',
-                  }
-                }
-              },
+            children: [              
               {
                 path: 'mje01',
                 data: {
@@ -514,6 +514,36 @@ export const PAGES_MENU = [
                 data: {
                   menu: {
                     title: 'tcode.vdr91',
+                  }
+                }
+              },
+            ]
+          },
+          {
+            // CUSTOMER
+            path: '',
+            data: {
+              menu: {
+                title: 'tcode.ctm',
+                selected: false,
+                expanded: false,
+                order: 250,
+              }
+            },
+            children: [
+              {
+                path: 'ctm90',
+                data: {
+                  menu: {
+                    title: 'tcode.ctm90',
+                  }
+                }
+              },
+              {
+                path: 'ctm91',
+                data: {
+                  menu: {
+                    title: 'tcode.ctm91',
                   }
                 }
               },

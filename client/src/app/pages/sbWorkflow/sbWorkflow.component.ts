@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'nga-sb-workflow',
+  selector: 'sb-workflow',
   template: `<router-outlet></router-outlet>`,
 })
-export class SbWorkflowComponent {
+export class SbWorkflow {
   constructor() {
   }
 }

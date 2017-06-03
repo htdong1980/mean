@@ -5,6 +5,7 @@ import { GlobalState } from './global.state';
 import { routing } from './app.routing';
 import { App } from './app.component';
 import { NgaModule } from './theme/nga.module';
+// import { NgcModule } from './components/ngc.module';
 import { PagesModule } from './pages/pages.module';
 
 import { NgModule, ApplicationRef } from '@angular/core';
@@ -50,6 +51,7 @@ export type StoreType = {
     ReactiveFormsModule,
     NgaModule.forRoot(),
     NgbModule.forRoot(),
+    // NgcModule.forRoot(),
     PagesModule,
     routing,
   ],

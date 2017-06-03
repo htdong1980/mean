@@ -1,23 +1,18 @@
-import { SbMyRequestComponent } from './sbMyRequest.component';
-import { IndexComponent } from './components/index/index.component';
-import { DraftComponent } from './components/draft/draft.component';
-import { InProgressComponent } from './components/inProgress/inProgress.component';
-import { DocumentingComponent } from './components/documenting/documenting.component';
-import { FinishedComponent } from './components/finished/finished.component';
-// import { Page404Component } from '../error/components/page404/page404.component';
+import { SbMyRequest } from './sbMyRequest.component';
+import { Draft, InProgress, Documenting, Finished } from './components';
 
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    component: SbMyRequestComponent,
+    component: SbMyRequest,
     children: [
-      { path: '', component: IndexComponent },
-      { path: 'draft', component: DraftComponent },
-      { path: 'inprogress', component: InProgressComponent },
-      { path: 'documenting', component: DocumentingComponent },
-      { path: 'finished', component: FinishedComponent },
+      // { path: '', component: IndexComponent },
+      { path: 'draft', component: Draft },
+      { path: 'inprogress', component: InProgress },
+      { path: 'documenting', component: Documenting },
+      { path: 'finished', component: Finished },
       // { path: '**', component: Page404Component },
     ],
   },

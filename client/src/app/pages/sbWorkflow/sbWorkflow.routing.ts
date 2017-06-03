@@ -1,17 +1,15 @@
-import { SbWorkflowComponent } from './sbWorkflow.component';
-import { IndexComponent } from './components/index/index.component';
-import { Vdr20Component } from '../_modules/vdr/components/vdr20/vdr20.component'
-// import { Page404Component } from '../error/components/page404/page404.component';
+import { SbWorkflow } from './sbWorkflow.component';
+import { Vdr20 } from '../../shared';
 
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    component: SbWorkflowComponent,
+    component: SbWorkflow,
     children: [
-      { path: '', component: IndexComponent },
-      { path: 'vdr20', component: Vdr20Component },
+      // { path: '', component: IndexComponent },
+      { path: 'vdr20', component: Vdr20 },
       // { path: '**', component: Page404Component },
     ],
   },
