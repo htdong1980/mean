@@ -44,7 +44,8 @@
     "workflow": "WORKFLOW",
     "transaction": "TRANSACTION",
     "masterdata": "MASTER DATA",
-    "config": "CONFIGURATION"
+    "config": "CONFIGURATION",
+    "library": "LIBRARY"
   },
   "tcode": {
     "news80": "Bulletin Board",
