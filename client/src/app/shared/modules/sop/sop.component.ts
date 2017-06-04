@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'sop',
   template: `<router-outlet></router-outlet>`,
 })
-export class SopComponent {
+export class Sop {
   constructor() {
   }
 }

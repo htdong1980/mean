@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'cnt',
   template: `<router-outlet></router-outlet>`,
 })
-export class CntComponent {
+export class Cnt {
   constructor() {
   }
 }

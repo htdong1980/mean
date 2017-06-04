@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./news80.scss'],
 })
 
-export class News80Component {
+export class News80 {
   constructor() {
   }
 }

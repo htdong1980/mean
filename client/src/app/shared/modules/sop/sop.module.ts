@@ -1,12 +1,12 @@
+import { Sop } from './sop.component';
+import { Sop80 } from './components';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgaModule } from '../../../theme/nga.module';
 
 import { routing } from './sop.routing';
-import { SopComponent } from './sop.component';
-import { Sop80Component } from './components/sop80/sop80.component';
-// import { Page404Component } from '../../error/components/page404/page404.component';
 
 @NgModule({
   imports: [
@@ -16,9 +16,8 @@ import { Sop80Component } from './components/sop80/sop80.component';
     routing,
   ],
   declarations: [
-    SopComponent,
-    Sop80Component,
-    // Page404Component,
+    Sop,
+    Sop80,
   ],
 })
 export class SopModule {

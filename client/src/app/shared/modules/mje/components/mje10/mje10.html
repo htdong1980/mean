@@ -2,35 +2,15 @@
   <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12">
       <ba-card title="" baCardClass="with-scroll">
-        <div class="btn-group-example">
-          <h5 class="panel-subtitle">Individual Processing</h5>
-          <div class="btn-group" role="group" aria-label="Individual">
-            <button type="button" class="btn btn-primary btn-with-icon"><i class="ion-android-add"></i>Create</button>
-            <button type="button" class="btn btn-primary btn-with-icon"><i class="ion-android-search"></i>View</button>
-            <button type="button" class="btn btn-primary btn-with-icon"><i class="ion-android-create"></i>Edit</button>
-            <button type="button" class="btn btn-primary btn-with-icon"><i class="ion-toggle-filled"></i>Disable</button>
-            <button type="button" class="btn btn-primary btn-with-icon"><i class="ion-toggle"></i>Enable</button>
-            <button type="button" class="btn btn-primary btn-with-icon"><i class="ion-clock"></i>History</button>
-          </div>
-        </div>
-        <br />
-        <div class="btn-group-example">
-          <h5 class="panel-subtitle">Collective Processing</h5>
-          <div class="btn-group" role="group" aria-label="Collective">
-            <button type="button" class="btn btn-danger btn-with-icon"><i class="ion-android-upload"></i>Upload</button>
-            <button type="button" class="btn btn-danger btn-with-icon"><i class="ion-android-download"></i>Extract</button>
-            <button type="button" class="btn btn-danger btn-with-icon"><i class="ion-android-cloud-done"></i>Update</button>
-            <button type="button" class="btn btn-danger btn-with-icon"><i class="ion-android-cloud"></i>Disable</button>
-            <button type="button" class="btn btn-danger btn-with-icon"><i class="ion-android-cloud-outline"></i>Enable</button>
-            <button type="button" class="btn btn-danger btn-with-icon"><i class="ion-android-time"></i>History</button>
-          </div>
-        </div>
+        <mje-0x [prefix]="prefix" [rights]="userRight"></mje-0x>
+        <mje-1x></mje-1x>
       </ba-card>
     </div>
   </div>
 </div>
 
 <ba-card title="List of Manual Journal Entries" baCardClass="with-scroll" class="smart-table-container">
-  <div class="row">    
+  <div class="row">
+    <mje-nx></mje-nx>
   </div>
 </ba-card>

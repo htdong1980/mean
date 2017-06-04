@@ -1,15 +1,14 @@
-import { Routes, RouterModule } from '@angular/router';
+import { Sop } from './sop.component';
+import { Sop80 } from './components';
 
-import { SopComponent } from './sop.component';
-import { Sop80Component } from './components/sop80/sop80.component';
+import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    component: SopComponent,
+    component: Sop,
     children: [
-      { path: 'sop80', component: Sop80Component },
-      // { path: '**', component: Page404Component },
+      { path: 'sop80', component: Sop80 },
     ],
   },
 ];

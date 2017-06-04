@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./cnt80.scss'],
 })
 
-export class Cnt80Component {
+export class Cnt80 {
   constructor() {
   }
 }

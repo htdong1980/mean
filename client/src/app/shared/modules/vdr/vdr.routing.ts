@@ -11,7 +11,6 @@ const routes: Routes = [
       { path: 'vdr20', component: Vdr20 },
       { path: 'vdr90', component: Vdr90 },
       { path: 'vdr91', component: Vdr91 },
-      // { path: '**', component: Page404Component },
     ],
   },
 ];

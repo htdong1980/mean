@@ -22,7 +22,22 @@
     "share_on_google_plus": "Share on Google Plus"
   },
   "shared":{
-    "about": "About"
+    "about": "About",
+    "individual": {
+      "title": "Individual processing",
+      "create": "Create",
+      "view": "View",
+      "edit": "Edit"
+    },
+    "collective": {
+      "title": "Collective processing",
+      "upload": "Upload",
+      "extract": "Extract",
+      "update": "Update"
+    },
+    "disable": "Disable",
+    "enable": "Enable",
+    "history": "History"
   },
   "sidebar": {
     "general": "GENERAL",

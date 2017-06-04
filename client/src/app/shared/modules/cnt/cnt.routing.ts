@@ -1,16 +1,15 @@
-import { CntComponent } from './cnt.component';
-import { Cnt80Component } from './components';
+import { Cnt } from './cnt.component';
+import { Cnt80 } from './components';
 
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    component: CntComponent,
+    component: Cnt,
     children: [
-      { path: '', component: Cnt80Component },
-      { path: 'cnt80', component: Cnt80Component },
-      // { path: '**', component: Page404Component },
+      { path: '', component: Cnt80 },
+      { path: 'cnt80', component: Cnt80 },
     ],
   },
 ];
