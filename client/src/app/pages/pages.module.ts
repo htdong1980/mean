@@ -1,8 +1,16 @@
-import { Page404 } from './error/page404';
-// import { NgcModule } from '../components/ngc.module';
+import { UserService } from './_services/index';
+import { Page404, Page500 } from './error';
+
+import { AuthGuard } from '../core/guard';        // Login Guard
+import { AuthTCodeGuard } from '../core/guard';   // TCode Guard
+import { AuthenticationService } from './_services/index';
+
+import { TestModule } from '../shared/modules/test/test.module';
+import { TCodeModule } from '../tcode';
+
 import { AppTranslationModule } from '../app.translation.module';
-import { AuthenticationService, UserService } from './_services';
-import { AuthGuard } from './_guards';
+
+// import { AuthenticationService, UserService } from '../core/services/index'; // Not work, why?
 import { Pages } from './pages.component';
 
 import { NgModule } from '@angular/core';
@@ -15,15 +23,18 @@ import { routing } from './pages.routing';
     CommonModule,
     AppTranslationModule,
     NgaModule,
-    // NgcModule,
+    TestModule,
+    TCodeModule,
     routing,
   ],
   declarations: [
     Pages,
     Page404,
+    Page500,
   ],
   providers: [
         AuthGuard,
+        AuthTCodeGuard,
         AuthenticationService,
         UserService,
     ],

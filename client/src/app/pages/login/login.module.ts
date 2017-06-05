@@ -1,5 +1,4 @@
 import { routing } from './login.routing';
-// import { AuthenticationService } from '../_services/index';
 import { Login } from './login.component';
 import { NgaModule } from '../../theme/nga.module';
 
@@ -21,7 +20,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     Login,
   ],
   providers: [
-//    AuthenticationService,
   ],
 })
 export class LoginModule {}

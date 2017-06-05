@@ -254,7 +254,7 @@ export const PAGES_MENU = [
             order: 250,
           }
         },
-        children: [          
+        children: [
             // VENDOR
             // CUSTOMER
         ]
@@ -314,22 +314,6 @@ export const PAGES_MENU = [
                 data: {
                   menu: {
                     title: 'general.menu.register',
-                  }
-                }
-              },
-              {
-                path: ['/page404'],
-                data: {
-                  menu: {
-                    title: 'general.menu.page404',
-                  }
-                }
-              },
-              {
-                path: ['/page500'],
-                data: {
-                  menu: {
-                    title: 'general.menu.page500',
                   }
                 }
               }

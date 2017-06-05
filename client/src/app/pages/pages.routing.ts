@@ -1,7 +1,12 @@
-import { AuthGuard } from './_guards/index'; // Add by HTD
+import { Test } from '../shared/modules/test/test.component';
+import { Mje10, Mje01, Mje02, Mje11, Mje12 } from '../tcode';
+import { Page404, Page500 } from './error';
+
+import { AuthGuard } from '../core/guard'; 
+import { AuthTCodeGuard } from '../core/guard';
 
 import { Routes, RouterModule } from '@angular/router';
-import { Page404 } from './error/page404';
+
 import { Pages } from './pages.component';
 import { ModuleWithProviders } from '@angular/core';
 // noinspection TypeScriptValidateTypes
@@ -26,19 +31,11 @@ export const routes: Routes = [
     loadChildren: 'app/pages/register/register.module#RegisterModule',
   },
   {
-    path: 'page404',
-    loadChildren: 'app/pages/page404/page404.module#Page404Module',
-  },
-  {
-    path: 'page500',
-    loadChildren: 'app/pages/page500/page500.module#Page500Module',
-  },
-  {
     path: 'pages',
     component: Pages,
     canActivateChild: [AuthGuard], // Add by HTD
     children: [
-      { path: '', redirectTo: 'blank', pathMatch: 'full' },
+      { path: '', redirectTo: 'library/blank', pathMatch: 'full' },
       { path: 'general', loadChildren: './sbGeneral/sbGeneral.module#SbGeneralModule' },
       { path: 'myapproval', loadChildren: './sbMyApproval/sbMyApproval.module#SbMyApprovalModule' },
       { path: 'myrequests', loadChildren: './sbMyRequest/sbMyRequest.module#SbMyRequestModule' },
@@ -46,7 +43,21 @@ export const routes: Routes = [
       { path: 'transaction', loadChildren: './sbTransaction/sbTransaction.module#SbTransactionModule' },
 
       { path: 'library/blank', loadChildren: './blank/blank.module#BlankModule' },
-      { path: 'library/adminLTE', loadChildren: './adminLTE/adminLTE.module#AdminLTEModule' },      
+      { path: 'library/adminLTE', loadChildren: './adminLTE/adminLTE.module#AdminLTEModule' },
+
+      { path: 'tcode',
+        canActivateChild: [AuthTCodeGuard],
+        children: [
+          { path: 'test', component: Test },
+          { path: 'mje10', component: Mje10 },
+          { path: 'mje01', component: Mje01 },
+          { path: 'mje02', component: Mje02 },
+          { path: 'mje11', component: Mje11 },
+          { path: 'mje12', component: Mje12 },
+          { path: '**', component: Page404 },
+        ],
+      },
+      { path: 'page500', component: Page500 },
       { path: '**', component: Page404 },
     ],
   },

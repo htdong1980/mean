@@ -1,5 +1,4 @@
 import { Page500Component } from './page500.component';
-import { routing } from './page500.routing';
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -13,7 +12,6 @@ import { NgaModule } from '../../theme/nga.module';
     FormsModule,
     AppTranslationModule,
     NgaModule,
-    routing,
   ],
   declarations: [
     Page500Component,

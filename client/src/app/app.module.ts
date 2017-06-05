@@ -1,10 +1,11 @@
 import { AppConfig } from './app.config';
-
+// import { AuthenticationService, UserService } from './core/services';
 import { InternalStateType, AppState } from './app.service';
 import { GlobalState } from './global.state';
 import { routing } from './app.routing';
 import { App } from './app.component';
 import { NgaModule } from './theme/nga.module';
+
 // import { NgcModule } from './components/ngc.module';
 import { PagesModule } from './pages/pages.module';
 

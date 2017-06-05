@@ -37,6 +37,8 @@ import {
   BcBlock,
   BcAlert,
   BcCallout,
+  BcIndividual,
+  BcCollective,
 } from './components';
 
 import { BaCardBlur } from './components/baCard/baCardBlur.directive';
@@ -90,6 +92,8 @@ const NGA_COMPONENTS = [
   BcBlock,
   BcAlert,
   BcCallout,
+  BcIndividual,
+  BcCollective,
 ];
 
 const NGA_DIRECTIVES = [
