@@ -63,6 +63,8 @@
     "library": "LIBRARY"
   },
   "tcode": {
+    "news01": "Create News",
+    "news10": "News Management",
     "news80": "Bulletin Board",
     "sop80": "GeoDe+ (SOP)",
     "cnt80": "Contact List",
@@ -75,7 +77,7 @@
     "vdr04": "Disable (Individual)",
     "vdr05": "Enable (Individual)",
     "vdr06": "History (Individual)",
-    "vdr10": "Summary (Collective)",
+    "vdr10": "Vendor",
     "vdr11": "Upload (Collective)",
     "vdr12": "Extract (Collective)",
     "vdr13": "Upsert (Collective)",

@@ -75,7 +75,7 @@ export class BcIndividual implements OnInit {
 
   /* To get value and navigate the link */
   private onClick(value: string): void {
-    let url: string = '/pages/tcode/' + value;
+    let url: string = '/pages/tcode/' + value + '/index';
     this.router.navigate([url]);
     // alert(value);
     // console.log(this.search(this.rights, 'tcode', 'mje03'));

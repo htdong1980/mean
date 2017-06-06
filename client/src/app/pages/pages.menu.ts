@@ -4,7 +4,7 @@ export const PAGES_MENU = [
     children: [
       // GENERAL
       {
-        path: 'general',
+        path: 'tcode',
         data: {
           menu: {
             title: 'sidebar.general',
@@ -16,10 +16,10 @@ export const PAGES_MENU = [
         },
         children: [
           {
-            path: 'news80',
+            path: 'news10',
             data: {
               menu: {
-                title: 'tcode.news80',
+                title: 'tcode.news10',
               }
             }
           },
@@ -42,9 +42,9 @@ export const PAGES_MENU = [
         ]
       },
 
-      // My INBOX
+      // My APPROVAL
       {
-        path: 'myapproval',
+        path: 'tcode',
         data: {
           menu: {
             title: 'sidebar.category.myapproval.title',
@@ -76,9 +76,9 @@ export const PAGES_MENU = [
         ]
       },
 
-      // My OUTBOX
+      // My REQUESTS
       {
-        path: 'myrequests',
+        path: 'tcode',
         data: {
           menu: {
             title: 'sidebar.category.myrequests.title',
@@ -130,7 +130,7 @@ export const PAGES_MENU = [
 
       // WORKFLOW
       {
-        path: 'workflow',
+        path: 'tcode',
         data: {
           menu: {
             title: 'sidebar.workflow',
@@ -154,7 +154,7 @@ export const PAGES_MENU = [
 
       // TRANSACTION
       {
-        path: 'transaction',
+        path: 'tcode',
         data: {
           menu: {
             title: 'sidebar.transaction',
@@ -173,58 +173,12 @@ export const PAGES_MENU = [
               }
             }
           },
-          {
-            // MJE
-            path: '',
-            data: {
-              menu: {
-                title: 'tcode.mje',
-                selected: false,
-                expanded: false,
-                order: 250,
-              }
-            },
-            children: [
-              {
-                path: 'mje01',
-                data: {
-                  menu: {
-                    title: 'tcode.mje01',
-                  }
-                }
-              },
-              {
-                path: 'mje02',
-                data: {
-                  menu: {
-                    title: 'tcode.mje02',
-                  }
-                }
-              },
-              {
-                path: 'mje11',
-                data: {
-                  menu: {
-                    title: 'tcode.mje11',
-                  }
-                }
-              },
-              {
-                path: 'mje12',
-                data: {
-                  menu: {
-                    title: 'tcode.mje12',
-                  }
-                }
-              },
-            ]
-          },
         ]
       },
 
       // MASTER DATA
       {
-        path: 'masterdata',
+        path: 'tcode',
         data: {
           menu: {
             title: 'sidebar.masterdata',
@@ -236,7 +190,14 @@ export const PAGES_MENU = [
         },
         children: [
           // VENDOR
-
+          {
+            path: 'vdr10',
+            data: {
+              menu: {
+                title: 'tcode.vdr10',
+              }
+            }
+          },
           // CUSTOMER
 
         ]
@@ -259,6 +220,47 @@ export const PAGES_MENU = [
             // CUSTOMER
         ]
       },
+
+      // TCODE LIBRARY
+      /*
+      {
+        path: 'tcode',
+        data: {
+          menu: {
+            title: 'sidebar.config',
+            icon: 'ion-settings',
+            selected: false,
+            expanded: false,
+            order: 250,
+          }
+        },
+        children: [
+          {
+            path: 'news01',
+            data: {
+              menu: {
+                title: 'sidebar.config',
+                icon: 'ion-settings',
+                selected: false,
+                expanded: false,
+                order: 250,
+              }
+            },
+            children: [
+              {
+                path: 'index',
+                data: {
+                  menu: {
+                    title: 'tcode.news01',
+                  }
+                }
+              },
+            ]
+          },
+        ]
+      },
+
+      */
 
       // LIBRARY
       {

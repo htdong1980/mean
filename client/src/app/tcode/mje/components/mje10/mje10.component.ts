@@ -1,9 +1,7 @@
-import { Component } from '@angular/core';
+import { TCode } from '../../../../core/type/tcode';
 
-export class TCode {
-  id: number;
-  tcode: string;
-}
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'mje-10',
@@ -30,9 +28,14 @@ export class Mje10 {
     { 'id': 4, 'tcode': 'mje11' },
   ];
 
-  constructor() {
+  constructor(
+    private router: Router,
+  ) { }
 
-
+  /* To get value and navigate the link */
+  private onClick(value: string): void {
+    let url: string = '/pages/tcode/' + value + '/index/6';
+    this.router.navigate([url]);
   }
 
 }

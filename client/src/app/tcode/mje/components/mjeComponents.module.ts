@@ -1,4 +1,4 @@
-import { Mje01 } from './mje01';
+import { Mje01Module } from './mje01';
 import { Mje02 } from './mje02';
 import { Mje11 } from './mje11';
 import { Mje12 } from './mje12';
@@ -14,9 +14,9 @@ import { NgaModule } from '../../../theme/nga.module';
     CommonModule,
     FormsModule,
     NgaModule,
+    Mje01Module,
   ],
   declarations: [
-    Mje01,
     Mje02,
     Mje11,
     Mje12,

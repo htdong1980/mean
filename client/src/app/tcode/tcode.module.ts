@@ -13,13 +13,28 @@ const SHARED_COMPONENTS = [
   // Error404,
 ];
 */
+import { NewsModule } from './news';
+import { InboxModule } from './inbox';
+import { OutboxModule } from './outbox';
 
-import {
-  MjeModule,
-} from './mje';
+import { DraftModule } from './draft';
+import { InProgressModule } from './inProgress';
+import { DocumentingModule } from './documenting';
+import { FinishedModule } from './finished';
+
+import { MjeModule } from './mje';
+import { VdrModule } from './vdr';
 
 const SHARED_MODULES = [
+  NewsModule,
+  InboxModule,
+  OutboxModule,
+  DraftModule,
+  InProgressModule,
+  DocumentingModule,
+  FinishedModule,
   MjeModule,
+  VdrModule,
 ];
 
 @NgModule({
