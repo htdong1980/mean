@@ -1,6 +1,7 @@
-import { TCode } from '../../../core/type/tcode';
+import { TCode } from '../../../core';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { BcUtilsService } from '../../services/bcUtils';
 
 @Component({
   selector: 'bc-collective',
@@ -24,6 +25,7 @@ export class BcCollective implements OnInit {
 
   constructor(
     private router: Router,
+    private utilsService: BcUtilsService,
   ) { }
 
   ngOnInit () {
@@ -75,7 +77,8 @@ export class BcCollective implements OnInit {
 
   /* To get value and navigate the link */
   private onClick(value) {
-    let url: string = '/pages/tcode/' + value;
+    const url: string = this.utilsService.toLead(value);
+    console.log(url);
     this.router.navigate([url]);
     //alert(value);
     // console.log(this.search(this.rights, 'tcode', 'mje03'));

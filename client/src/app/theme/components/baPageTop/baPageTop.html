@@ -4,8 +4,10 @@
   <a href (click)="toggleMenu()" class="collapse-menu-link ion-navicon"></a>
 
   <div class="search">
-    <i class="ion-ios-search-strong" ng-click="startSearch()"></i>
-    <input id="searchInput" type="text" placeholder="Search for...">
+    <form (keydown)="keyDownFunction($event)">
+      <i class="ion-ios-search-strong"></i>
+      <input id="searchInput" type="text" placeholder="Search for..." [(ngModel)]="tcodeExecution" name="tcode">
+    </form>
   </div>
 
   <div class="user-profile clearfix">

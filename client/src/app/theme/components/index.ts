@@ -23,3 +23,4 @@ export * from './bcAlert';
 export * from './bcCallout';
 export * from './bcIndividual';
 export * from './bcCollective';
+export * from './bcLead';

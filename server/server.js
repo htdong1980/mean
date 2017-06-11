@@ -15,6 +15,8 @@ app.use(expressJwt({ secret: config.secret }).unless({ path: ['/users/authentica
 
 // routes
 app.use('/users', require('./controllers/users.controller'));
+app.use('/news', require('./controllers/news.controller'));
+app.use('/mjes', require('./controllers/mjes.controller'));
 
 // start server
 var port = process.env.NODE_ENV === 'production' ? 80 : 4000;

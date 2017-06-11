@@ -1,23 +1,22 @@
+import { Vdr01Module } from './vdr01';
+import { Vdr } from './vdr.component';
+import { routing } from './vdr.routing';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AppTranslationModule } from '../../app.translation.module';
-import { NgaModule } from '../../theme/nga.module';
-
-import { VdrComponentsModule } from './components';
-import { Vdr10Module } from './components';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     AppTranslationModule,
-    NgaModule,
-    VdrComponentsModule,
-    Vdr10Module,
+    Vdr01Module,
+    routing,
   ],
   declarations: [
+    Vdr,
   ],
 })
-export class VdrModule {
-}
+export class VdrModule {}

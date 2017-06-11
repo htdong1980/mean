@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'mje-01',
@@ -6,7 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./mje01.scss'],
 })
 
-export class Mje01 {
+export class Mje01 implements OnInit, OnDestroy {
+
   constructor() {
+  }
+
+  ngOnInit() {
+  }
+
+  ngOnDestroy() {
   }
 }

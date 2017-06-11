@@ -1,10 +1,14 @@
 export * from './tcode.module';
+
+export * from './_inbox';
+export * from './_outbox';
+
+export * from './_draft';
+export * from './_inProgress';
+export * from './_documenting';
+export * from './_finished';
+
 export * from './mje';
-export * from './news';
-export * from './inbox';
-export * from './outbox';
-export * from './draft';
-export * from './inProgress';
-export * from './documenting';
-export * from './finished';
+
+// MASTER DATA
 export * from './vdr';

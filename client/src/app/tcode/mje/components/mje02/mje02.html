@@ -1,5 +1,19 @@
-<div class="row">
-  <div class="col-md-12">
-	Mje02
+<div class="row" *ngIf="!id">
+  <div class="col-md-6">
+    <div>
+      <ba-card baCardClass="with-scroll"> <!-- title="MJE 01" -->
+        <bc-lead prefix="mje" tcode="mje02"></bc-lead>
+      </ba-card>
+    </div>
+  </div>
+</div>
+
+<div class="row" *ngIf="id">
+  <div class="col-md-6">
+    <div>
+      <ba-card baCardClass="with-scroll"> <!-- title="MJE 01" -->
+        FORM
+      </ba-card>
+    </div>
   </div>
 </div>

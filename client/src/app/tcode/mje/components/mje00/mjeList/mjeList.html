@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="horizontal-scroll">
+      <table class="table table-container table-hover">
+        <tr class="black-muted-bg">
+          <th class="text-center">ID</th>
+          <th class="align-right">Legal Entity</th>
+          <th class="align-center">Document Date</th>
+          <th class="align-center">Description</th>
+          <th class="align-center">Entry Date</th>
+          <th class="align-center">Creator</th>
+          <th class="text-center">Action</th>
+        </tr>
+        <tr *ngFor="let item of pagedItems">
+          <td>{{item._id}}</td>
+          <td>{{item.lge}}</td>
+          <td>{{item.docDate}}</td>
+          <td>{{item.desc}}</td>
+          <td>{{item.entryDate}}</td>
+          <td>{{item.user}}</td>
+          <td>
+            <div class="btn-group">
+              <button (click)="onClick('mje02', item._id)" type="button" class="btn btn-primary btn-icon"><i class="ion-android-search"></i></button>
+              <button (click)="onClick('mje03', item._id)" type="button" class="btn btn-primary btn-icon"><i class="ion-android-create"></i></button>
+              <button (click)="deleteNews(item._id)" type="button" class="btn btn-primary btn-icon"><i class="ion-toggle-filled"></i></button>
+              <button (click)="onClick('mje05', item._id)" type="button" class="btn btn-primary btn-icon"><i class="ion-toggle"></i></button>
+              <button (click)="onClick('mje06', item._id)" type="button" class="btn btn-primary btn-icon"><i class="ion-clock"></i></button>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <!-- pager -->
+      <div class="btn-group" *ngIf="pager.pages && pager.pages.length">
+        <button [ngClass]="{disabled:pager.currentPage === 1}" (click)="setPage(1)" type="button" class="btn btn-primary btn-icon"><i class="ion-ios-skipbackward"></i></button>
+        <button [ngClass]="{disabled:pager.currentPage === 1}" (click)="setPage(pager.currentPage - 1)" type="button" class="btn btn-primary btn-icon"><i class="ion-arrow-left-b"></i></button>
+        <button *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}" (click)="setPage(page)" type="button" class="btn btn-primary">{{page}}</button>
+        <button [ngClass]="{disabled:pager.currentPage === pager.totalPages}" (click)="setPage(pager.currentPage + 1)" type="button" class="btn btn-primary btn-icon"><i class="ion-arrow-right-b"></i></button>
+        <button [ngClass]="{disabled:pager.currentPage === pager.totalPages}" (click)="setPage(pager.totalPages)" type="button" class="btn btn-primary btn-icon"><i class="ion-ios-skipforward"></i></button>
+      </div>
+
+    </div>
+  </div>
+</div>

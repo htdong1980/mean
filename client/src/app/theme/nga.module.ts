@@ -39,6 +39,7 @@ import {
   BcCallout,
   BcIndividual,
   BcCollective,
+  BcLead,
 } from './components';
 
 import { BaCardBlur } from './components/baCard/baCardBlur.directive';
@@ -61,6 +62,8 @@ import {
   BaMenuService,
   BaThemePreloader,
   BaThemeSpinner,
+  BcPagerService,
+  BcUtilsService,
 } from './services';
 
 import {
@@ -94,6 +97,7 @@ const NGA_COMPONENTS = [
   BcCallout,
   BcIndividual,
   BcCollective,
+  BcLead,
 ];
 
 const NGA_DIRECTIVES = [
@@ -115,6 +119,8 @@ const NGA_SERVICES = [
   BaThemeSpinner,
   BaMenuService,
   BaAlertService,
+  BcPagerService,
+  BcUtilsService,
 ];
 
 const NGA_VALIDATORS = [

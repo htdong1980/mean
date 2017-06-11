@@ -1,107 +1,84 @@
-import { Test } from '../shared/modules/test/test.component';
-import { Mje10, Mje01, Mje02, Mje11, Mje12 } from '../tcode';
-import { News10, News01, News02, News11, News12 } from '../tcode';
-import { Vdr10, Vdr01, Vdr02, Vdr11, Vdr12, Vdr20 } from '../tcode';
+import { Page404, Page500 } from './_error';
+import { AuthGuard, AuthTCodeGuard } from '../core/guard';
+
 import { Inbox, Outbox, Draft, InProgress, Documenting, Finished } from '../tcode';
-import { Page404, Page500 } from './error';
 
-import { AuthGuard } from '../core/guard';
-import { AuthTCodeGuard } from '../core/guard';
+import { Mje } from '../tcode';
+// import { Mje00 } from '../tcode/mje/components/mje00';
 
-import { Routes, RouterModule } from '@angular/router';
+import { Vdr, Vdr01 } from '../tcode';
 
 import { Pages } from './pages.component';
+import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
-// noinspection TypeScriptValidateTypes
-
-// export function loadChildren(path) { return System.import(path); };
 
 export const routes: Routes = [
   {
     path: '',
     loadChildren: 'app/pages/landingpage/landingpage.module#LandingPageModule',
+    data: { name: 'Landing' },
   },
   {
     path: 'login',
-    loadChildren: 'app/pages/login/login.module#LoginModule',
+    loadChildren: 'app/pages/_login/login.module#LoginModule',
+    data: { name: 'Login' },
   },
   {
     path: 'reset',
-    loadChildren: 'app/pages/reset/reset.module#ResetModule',
+    loadChildren: 'app/pages/_reset/reset.module#ResetModule',
+    data: { name: 'Reset' },
   },
   {
     path: 'register',
-    loadChildren: 'app/pages/register/register.module#RegisterModule',
+    loadChildren: 'app/pages/_register/register.module#RegisterModule',
+    data: { name: 'Register' },
   },
   {
     path: 'pages',
     component: Pages,
-    canActivateChild: [AuthGuard], // Add by HTD
+    canActivateChild: [AuthGuard],
+    data: { name: 'Pages' },
     children: [
-      { path: '', redirectTo: 'library/blank', pathMatch: 'full' },
+      { path: '', redirectTo: 'library/blank', data: { name: 'Page Default' }, pathMatch: 'full' },
+      { path: 'library/blank', loadChildren: './blank/blank.module#BlankModule' },
+      { path: 'library/adminLTE', loadChildren: './adminLTE/adminLTE.module#AdminLTEModule' },
 
-      // tcode based
-      { path: 'workflow', loadChildren: './sbWorkflow/sbWorkflow.module#SbWorkflowModule' },
-
+      // tcode
       { path: 'tcode',
         canActivateChild: [AuthTCodeGuard],
+        data: { name: 'TCode' },
         children: [
-          { path: 'test', component: Test },
+          // My Approval
+          { path: 'inbox', component: Inbox },
+          { path: 'outbox', component: Outbox },
 
-          // My Approval and My Requests
-          { path: '',
-            children: [
-              { path: 'inbox', component: Inbox },
-              { path: 'outbox', component: Outbox },
-              { path: 'draft', component: Draft },
-              { path: 'inprogress', component: InProgress },
-              { path: 'documenting', component: Documenting },
-              { path: 'finished', component: Finished },
-            ],
-          },
+          // My Requests
+          { path: 'draft', component: Draft },
+          { path: 'inprogress', component: InProgress },
+          { path: 'documenting', component: Documenting },
+          { path: 'finished', component: Finished },
 
-          // News
-          { path: '',
-            children: [
-              { path: 'news10', component: News10 },
-              { path: 'news01', loadChildren: '../tcode/news/components/news01/news01.module#News01Module' },
-              { path: 'news02', component: News02 },
-              { path: 'news11', component: News11 },
-              { path: 'news12', component: News12 },
-            ],
-          },
+          { path: 'mje', loadChildren: '../tcode/mje/mje.module#MjeModule' },
+          // { path: 'mje00', component: Mje00 },
 
-          // MJE
-          { path: '',
-            children: [
-              { path: 'mje10', component: Mje10 },
-              { path: 'mje01', loadChildren: '../tcode/mje/components/mje01/mje01.module#Mje01Module' },
-              { path: 'mje02', component: Mje02 },
-              { path: 'mje11', component: Mje11 },
-              { path: 'mje12', component: Mje12 },
-            ],
-          },
+          // Vendor
+          // { path: 'vdr', component: Vdr },
+          // { path: 'vdr01', component: Vdr01 },
+          // { path: 'vdr', loadChildren: '../tcode/vdr/vdr.module#VdrModule' },
 
-          // VDR
-          { path: '',
-            children: [
-              { path: 'vdr10', component: Vdr10 },
-              { path: 'vdr01', loadChildren: '../tcode/vdr/components/vdr01/vdr01.module#Vdr01Module' },
-              { path: 'vdr02', component: Vdr02 },
-              { path: 'vdr11', component: Vdr11 },
-              { path: 'vdr12', component: Vdr12 },
-              { path: 'vdr20', component: Vdr20 },
-            ],
-          },
-
-          { path: '**', component: Page404 },
+          /*
+          { path: 'news10', component: News10 },
+          { path: 'news01', loadChildren: '../tcode/news/components/news01/news01.module#News01Module' },
+          */
         ],
       },
 
-      { path: 'library/blank', loadChildren: './blank/blank.module#BlankModule' },
-      { path: 'library/adminLTE', loadChildren: './adminLTE/adminLTE.module#AdminLTEModule' },
-      { path: 'page500', component: Page500 },
-      { path: '**', component: Page404 },
+      // error
+      { path: 'page404', component: Page404, data: { name: 'Page404' } },
+      { path: 'page500', component: Page500, data: { name: 'Page500' } },
+
+      // Exceptional
+      { path: '**', redirectTo: 'page404', pathMatch: 'full', data: { name: 'Page500' } },
     ],
   },
 ];

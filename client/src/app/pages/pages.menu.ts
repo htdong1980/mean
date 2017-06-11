@@ -2,6 +2,7 @@ export const PAGES_MENU = [
   {
     path: 'pages',
     children: [
+
       // GENERAL
       {
         path: 'tcode',
@@ -142,10 +143,10 @@ export const PAGES_MENU = [
         },
         children: [
           {
-            path: 'vdr20',
+            path: 'vdr',
             data: {
               menu: {
-                title: 'tcode.vdr20',
+                title: 'tcode.vdr',
               }
             }
           }
@@ -166,10 +167,10 @@ export const PAGES_MENU = [
         },
         children: [
           {
-            path: 'mje10',
+            path: 'mje',
             data: {
               menu: {
-                title: 'tcode.mje10',
+                title: 'tcode.mje',
               }
             }
           },
@@ -222,12 +223,11 @@ export const PAGES_MENU = [
       },
 
       // TCODE LIBRARY
-      /*
       {
         path: 'tcode',
         data: {
           menu: {
-            title: 'sidebar.config',
+            title: 'sidebar.library',
             icon: 'ion-settings',
             selected: false,
             expanded: false,
@@ -236,11 +236,10 @@ export const PAGES_MENU = [
         },
         children: [
           {
-            path: 'news01',
+            path: '',
             data: {
               menu: {
-                title: 'sidebar.config',
-                icon: 'ion-settings',
+                title: 'tcode.mje_menu',
                 selected: false,
                 expanded: false,
                 order: 250,
@@ -248,19 +247,26 @@ export const PAGES_MENU = [
             },
             children: [
               {
-                path: 'index',
+                path: 'mje00',
                 data: {
                   menu: {
-                    title: 'tcode.news01',
+                    title: 'tcode.mje00',
+                  }
+                }
+              },
+              {
+                path: 'mje01',
+                data: {
+                  menu: {
+                    title: 'tcode.mje01',
                   }
                 }
               },
             ]
           },
+
         ]
       },
-
-      */
 
       // LIBRARY
       {
@@ -287,6 +293,8 @@ export const PAGES_MENU = [
               }
             },
             children: [
+
+              // Landing
               {
                 path: ['/'],
                 data: {
@@ -295,6 +303,8 @@ export const PAGES_MENU = [
                   }
                 }
               },
+
+              // Login
               {
                 path: ['/login'],
                 data: {
@@ -303,6 +313,8 @@ export const PAGES_MENU = [
                   }
                 }
               },
+
+              // Reset
               {
                 path: ['/reset'],
                 data: {
@@ -311,6 +323,8 @@ export const PAGES_MENU = [
                   }
                 }
               },
+
+              // Register
               {
                 path: ['/register'],
                 data: {
@@ -349,6 +363,7 @@ export const PAGES_MENU = [
           },
         ]
       },
-    ]
-  }
+    ],
+
+  },
 ];

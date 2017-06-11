@@ -1,6 +1,4 @@
 import { Mje01 } from './mje01.component';
-import { Mje01Index, Mje01Form } from './components';
-import { routing } from './mje01.routing';
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -14,11 +12,9 @@ import { NgaModule } from '../../../../theme/nga.module';
     FormsModule,
     AppTranslationModule,
     NgaModule,
-    routing,
   ],
   declarations: [
     Mje01,
-    Mje01Index, Mje01Form,
   ],
   providers: [
   ],

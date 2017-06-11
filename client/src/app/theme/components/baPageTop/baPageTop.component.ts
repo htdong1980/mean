@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { GlobalState } from '../../../global.state';
+import { Router } from '@angular/router';
+import { BcUtilsService } from '../../services/bcUtils';
 
 @Component({
   selector: 'ba-page-top',
@@ -10,8 +12,13 @@ export class BaPageTop {
 
   public isScrolled: boolean = false;
   public isMenuCollapsed: boolean = false;
+  public tcodeExecution: string = '';
 
-  constructor(private _state: GlobalState) {
+  constructor(
+    private _state: GlobalState,
+    private router: Router,
+    private utilsService: BcUtilsService,
+  ) {
     this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
       this.isMenuCollapsed = isCollapsed;
     });
@@ -25,6 +32,15 @@ export class BaPageTop {
 
   public scrolledChanged(isScrolled) {
     this.isScrolled = isScrolled;
+  }
+
+  public keyDownFunction(event) {
+    if (event.keyCode == 13) {
+      const url: string = this.utilsService.toLead(this.tcodeExecution);
+      console.log(url);
+      this.tcodeExecution = '';
+      this.router.navigate([url]);
+    }
   }
 
   public logOut() {

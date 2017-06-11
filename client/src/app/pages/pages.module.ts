@@ -1,16 +1,15 @@
-import { UserService } from './_services/index';
-import { Page404, Page500 } from './error';
+import { Page404, Page500 } from './_error';
+import { UserService } from '../core/services/user.service';
+import { AuthenticationService } from '../core/services/authentication.service';
+import { AuthGuard } from '../core/guard';                                        // Login Guard
+import { AuthTCodeGuard } from '../core/guard';                                   // TCode Guard
 
-import { AuthGuard } from '../core/guard';        // Login Guard
-import { AuthTCodeGuard } from '../core/guard';   // TCode Guard
-import { AuthenticationService } from './_services/index';
-
-import { TestModule } from '../shared/modules/test/test.module';
+// Import all TCode Modules
 import { TCodeModule } from '../tcode';
+// import { MjeModule } from '../tcode/mje/mje.module';
+// import { VdrModule } from '../tcode/module.module';
 
 import { AppTranslationModule } from '../app.translation.module';
-
-// import { AuthenticationService, UserService } from '../core/services/index'; // Not work, why?
 import { Pages } from './pages.component';
 
 import { NgModule } from '@angular/core';
@@ -23,8 +22,9 @@ import { routing } from './pages.routing';
     CommonModule,
     AppTranslationModule,
     NgaModule,
-    TestModule,
     TCodeModule,
+    // VdrModule,
+    // MjeModule,
     routing,
   ],
   declarations: [
@@ -33,11 +33,11 @@ import { routing } from './pages.routing';
     Page500,
   ],
   providers: [
-        AuthGuard,
-        AuthTCodeGuard,
-        AuthenticationService,
-        UserService,
-    ],
+    AuthGuard,
+    AuthTCodeGuard,
+    AuthenticationService,
+    UserService,
+  ],
 })
 export class PagesModule {
 }

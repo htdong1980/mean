@@ -2,6 +2,7 @@
   "adminLTE":{
     "more_info": "More info"
   },
+
   "login": {
     "title": "GK|SBS",
     "signup_link": "Sign up!",
@@ -21,6 +22,7 @@
     "share_on_twitter": "Share on Twitter",
     "share_on_google_plus": "Share on Google Plus"
   },
+
   "shared":{
     "about": "About",
     "individual": {
@@ -37,8 +39,12 @@
     },
     "disable": "Disable",
     "enable": "Enable",
-    "history": "History"
+    "history": "History",
+    "lge": "Legal Entity",
+    "lead": "Leading information",
+    "proceed": "Proceed"
   },
+
   "sidebar": {
     "general": "GENERAL",
     "category": {
@@ -62,6 +68,7 @@
     "config": "CONFIGURATION",
     "library": "LIBRARY"
   },
+
   "tcode": {
     "news01": "Create News",
     "news10": "News Management",
@@ -69,31 +76,35 @@
     "sop80": "GeoDe+ (SOP)",
     "cnt80": "Contact List",
 
-    "vdr": "VENDOR",
-    "vdr00": "Management",
-    "vdr01": "Create (Individual)",
-    "vdr02": "View (Individual)",
-    "vdr03": "Edit (Individual)",
-    "vdr04": "Disable (Individual)",
-    "vdr05": "Enable (Individual)",
-    "vdr06": "History (Individual)",
-    "vdr10": "Vendor",
-    "vdr11": "Upload (Collective)",
-    "vdr12": "Extract (Collective)",
-    "vdr13": "Upsert (Collective)",
-    "vdr14": "Disable (Collective)",
-    "vdr15": "Enable (Collective)",
-    "vdr16": "History (Collective)",
+    "vdr": "Vendor",
+    "vdr_menu": "VENDOR",
+    "vdr00": "Vendor Management",
+    "vdr01": "Vendor Create",
+    "vdr02": "Vendor View",
+    "vdr03": "Vendor Edit",
+    "vdr04": "Vendor Disable",
+    "vdr05": "Vendor Enable",
+    "vdr06": "Vendor History",
+    "vdr11": "Vendors Upload",
+    "vdr12": "Vendors Extract",
+    "vdr13": "Vendors Upsert",
+    "vdr14": "Vendors Disable",
+    "vdr15": "Vendors Enable",
+    "vdr16": "Vendors Changes",
     "vdr20": "Vendor Request",
-    "vdr90": "Properties",
-    "vdr91": "Approval Matrix",
+    "vdr90": "Vendor Properties",
+    "vdr91": "Vendor Approval",
 
-    "mje": "MJE",
+    "mje": "Manual Journal Entry",
+    "mje_menu": "MJE",
+    "mje00": "MJE Management",
     "mje01": "MJE Create",
     "mje02": "MJE View",
-    "mje10": "Manual Journal Entry",
     "mje11": "MJEs Upload",
     "mje12": "MJEs Extract",
+    "mje20": "MJE Request",
+    "mje90": "MJE Properties",
+    "mje91": "MJE Approval",
 
     "ctm": "CUSTOMER",
     "ctm00": "Customer Management",
@@ -113,107 +124,22 @@
     "ctm20": "Customer Request",
     "ctm90": "Properties",
     "ctm91": "Approval Matrix"
-
   },
+
   "general": {
     "gk": "GK",
     "sbs": "SBS",
     "gk_sbs": "GK| SBS",
     "akveo": "Akveo",
     "home": "Home",
-    "forms": {
-      "option1": "Option 1"
-    },
     "menu": {
-      "dashboard": "Dashboard",
-      "editors": "Editors",
-      "ck_editor": "CKEditor",
-      "components": "Components",
-      "tree_view": "Tree View",
-      "charts": "Charts",
-      "chartist_js": "Chartist.Js",
-      "ui_features": "UI Features",
-      "typography": "Typography",
-      "buttons": "Buttons",
-      "icons": "Icons",
-      "modals": "Modals",
-      "grid": "Grid",
-      "form_elements": "Form Elements",
-      "form_inputs": "Form Inputs",
-      "form_layouts": "Form Layouts",
-      "tables": "Tables",
-      "basic_tables": "Basic Tables",
-      "smart_tables": "Smart Tables",
-      "maps": "Maps",
-      "google_maps": "Google Maps",
-      "leaflet_maps": "Leaflet Maps",
-      "bubble_maps": "Bubble Maps",
-      "line_maps": "Line Maps",
-      "landingpage": "Landing Page",
       "pages": "Pages",
+      "landingpage": "Landing Page",
       "login": "Login",
       "reset": "Reset",
-      "register": "Register",
-      "page_error": "Page Error",
-      "page404": "Page 404",
-      "page500": "Page 500",
-      "menu_level_1": "Menu Level 1",
-      "menu_level_1_1": "Menu Level 1.1",
-      "menu_level_1_2": "Menu Level 1.2",
-      "menu_level_1_2_1": "Menu Level 1.2.1",
-      "external_link": "External Link"
+      "register": "Register"
     },
     "created_with": "Created with"
-  },
-  "dashboard": {
-    "acquisition_channels": "Acquisition Channels",
-    "users_by_country": "Users by Country",
-    "revenue": "Revenue",
-    "feed": "Feed",
-    "todo_list": "To Do List",
-    "calendar": "Calendar",
-    "new_visits": "New Visits",
-    "purchases": "Purchases",
-    "active_users": "Active Users",
-    "returned": "Returned",
-    "popular_app": {
-      "super_app": "Super App",
-      "most_popular_app": "Most Popular App",
-      "total_visits": "Total Visits",
-      "new_visits": "New Visits",
-      "sales": "Sales"
-    },
-    "todo": {
-      "task_todo": "Task to do.."
-    },
-    "traffic_chart": {
-      "view_total": "Views Total"
-    }
-  },
-  "tree_view": {
-    "title": "basic",
-    "programming": "Programming languages by programming paradigm",
-    "oop": "Object-oriented programming",
-    "java": "Java",
-    "c_plus_plus": "C++",
-    "c_sharp": "C#",
-    "prototype": "Prototype-based programming",
-    "java_script": "JavaScript",
-    "coffee_script": "CoffeeScript",
-    "lua": "Lua"
-  },
-  "chart": {
-    "lines": "Lines",
-    "bars": "Bars",
-    "simple_line_chart": "Simple line chart",
-    "line_chart": "Line chart with area",
-    "bi_polar_line_chart": "Bi-polar line chart with area only",
-    "simple_bar_chart": "Simple bar chart",
-    "multi_line_labels_bar_chart": "Multi-line labels bar chart",
-    "stacked_bar_chart": "Stacked bar chart",
-    "pies_and_donuts": "Pies & Donuts",
-    "simple_pie": "Simple Pie",
-    "pie_with_labels": "Pie with labels",
-    "donut": "Donut"
   }
+
 }
