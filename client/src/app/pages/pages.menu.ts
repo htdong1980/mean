@@ -235,8 +235,9 @@ export const PAGES_MENU = [
           }
         },
         children: [
+          // MJE
           {
-            path: '',
+            path: 'mje',
             data: {
               menu: {
                 title: 'tcode.mje_menu',
@@ -259,6 +260,110 @@ export const PAGES_MENU = [
                 data: {
                   menu: {
                     title: 'tcode.mje01',
+                  }
+                }
+              },
+              {
+                path: 'mje02',
+                data: {
+                  menu: {
+                    title: 'tcode.mje02',
+                  }
+                }
+              },
+              {
+                path: 'mje03',
+                data: {
+                  menu: {
+                    title: 'tcode.mje03',
+                  }
+                }
+              },
+              {
+                path: 'mje04',
+                data: {
+                  menu: {
+                    title: 'tcode.mje04',
+                  }
+                }
+              },
+              {
+                path: 'mje05',
+                data: {
+                  menu: {
+                    title: 'tcode.mje05',
+                  }
+                }
+              },
+              {
+                path: 'mje06',
+                data: {
+                  menu: {
+                    title: 'tcode.mje06',
+                  }
+                }
+              },
+              {
+                path: 'mje11',
+                data: {
+                  menu: {
+                    title: 'tcode.mje11',
+                  }
+                }
+              },
+              {
+                path: 'mje12',
+                data: {
+                  menu: {
+                    title: 'tcode.mje12',
+                  }
+                }
+              },
+              {
+                path: 'mje13',
+                data: {
+                  menu: {
+                    title: 'tcode.mje13',
+                  }
+                }
+              },
+              {
+                path: 'mje14',
+                data: {
+                  menu: {
+                    title: 'tcode.mje14',
+                  }
+                }
+              },
+              {
+                path: 'mje15',
+                data: {
+                  menu: {
+                    title: 'tcode.mje15',
+                  }
+                }
+              },
+              {
+                path: 'mje16',
+                data: {
+                  menu: {
+                    title: 'tcode.mje16',
+                  }
+                }
+              },
+              {
+                path: 'mje90',
+                data: {
+                  menu: {
+                    title: 'tcode.mje90',
+                  }
+                }
+              },
+              {
+                path: 'mje91',
+                data: {
+                  menu: {
+                    title: 'tcode.mje91',
                   }
                 }
               },

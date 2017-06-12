@@ -40,9 +40,10 @@
     "disable": "Disable",
     "enable": "Enable",
     "history": "History",
+    "return": "Return",
     "lge": "Legal Entity",
     "lead": "Leading information",
-    "proceed": "Proceed"
+    "doc_id": "Document ID"
   },
 
   "sidebar": {
@@ -97,14 +98,22 @@
 
     "mje": "Manual Journal Entry",
     "mje_menu": "MJE",
-    "mje00": "MJE Management",
-    "mje01": "MJE Create",
-    "mje02": "MJE View",
-    "mje11": "MJEs Upload",
-    "mje12": "MJEs Extract",
-    "mje20": "MJE Request",
-    "mje90": "MJE Properties",
-    "mje91": "MJE Approval",
+    "mje00": "MJE[00]-Summary",
+    "mje01": "MJE[01]-Create",
+    "mje02": "MJE[02]-View",
+    "mje03": "MJE[03]-Edit",
+    "mje04": "MJE[04]-Disable",
+    "mje05": "MJE[05]-Enable",
+    "mje06": "MJE[06]-View changes",
+    "mje11": "MJE[11]-Upload",
+    "mje12": "MJE[12]-Extract",
+    "mje13": "MJE[13]-Upsert",
+    "mje14": "MJE[14]-Inactivate",
+    "mje15": "MJE[15]-Activate",
+    "mje16": "MJE[16]-History",
+    "mje20": "MJE[20]-Request",
+    "mje90": "MJE[90]-Properties",
+    "mje91": "MJE[91]-Approval",
 
     "ctm": "CUSTOMER",
     "ctm00": "Customer Management",

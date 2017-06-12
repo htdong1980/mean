@@ -59,6 +59,12 @@ export const routes: Routes = [
           { path: 'finished', component: Finished },
 
           { path: 'mje', loadChildren: '../tcode/mje/mje.module#MjeModule' },
+          /*
+          { path: 'mje/mje00', loadChildren: '../tcode/mje/components/mje00/mje00.module#Mje00Module' },
+          { path: 'mje/mje01', loadChildren: '../tcode/mje/components/mje01/mje01.module#Mje01Module' },
+          { path: 'mje/mje02', loadChildren: '../tcode/mje/components/mje02/mje02.module#Mje02Module' },
+          { path: 'mje/mje03', loadChildren: '../tcode/mje/components/mje03/mje03.module#Mje03Module' },
+          */
           // { path: 'mje00', component: Mje00 },
 
           // Vendor

@@ -80,9 +80,6 @@ export class BcIndividual implements OnInit {
     const url: string = this.utilsService.toLead(value);
     console.log(url);
     this.router.navigate([url]);
-    // alert(value);
-    // console.log(this.search(this.rights, 'tcode', 'mje03'));
-    // console.log(this.searchArray(this.rightsArray, 'tcode', 'mje03'));
   }
 
 }

@@ -1,11 +1,14 @@
 <form>
   <div class="form-group">
-      <label for="lge" translate>{{'shared.lge'}}</label>
-      <input type="text" class="form-control" id="lge" placeholder="{{'shared.lge' | translate}}">
-  </div>
-  <div class="form-group">
       <label for="lead" translate>{{'shared.lead'}}</label>
-      <input type="text" class="form-control" id="lead" placeholder="{{'shared.lead' | translate}}">
+      <input type="text" class="form-control" [(ngModel)]="leadInfo" name="leadInfo" placeholder="{{'shared.doc_id' | translate}}">
   </div>
-  <button type="button" (click)="onClick(6)" class="btn btn-primary" translate>{{'shared.proceed'}}</button>
+  <button type="button" (click)="return()" class="btn btn-default btn-with-icon" translate><i class="ion-ios-undo"></i>{{'shared.return'}}</button>
+  <div class="pull-right">
+      <button *ngIf="btnAction=='02'" type="button" (click)="onClick()" class="btn btn-info btn-with-icon" translate><i class="ion-android-search"></i>{{'shared.individual.view'}}</button>
+      <button *ngIf="btnAction=='03'" type="button" (click)="onClick()" class="btn btn-success btn-with-icon" translate><i class="ion-android-create"></i>{{'shared.individual.edit'}}</button>
+      <button *ngIf="btnAction=='04'" type="button" (click)="onClick()" class="btn btn-warning btn-with-icon" translate><i class="ion-toggle-filled"></i>{{'shared.disable'}}</button>
+      <button *ngIf="btnAction=='05'" type="button" (click)="onClick()" class="btn btn-primary btn-with-icon" translate><i class="ion-toggle"></i>{{'shared.enable'}}</button>
+      <button *ngIf="btnAction=='06'" type="button" (click)="onClick()" class="btn btn-primary btn-with-icon" translate><i class="ion-clock"></i>{{'shared.history'}}</button>
+  </div>
 </form>
